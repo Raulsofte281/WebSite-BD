@@ -1,8 +1,11 @@
 
+import { Link } from "react-router-dom"; 
+import { Search} from '@/components/Search'
+
 export function App() {
   return (
     <>
-      <h1 className="text-xl">asdsad</h1>
+      <Search/>
     </>
   );
 }
