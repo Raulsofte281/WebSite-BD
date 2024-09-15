@@ -12,6 +12,7 @@ import { OctagonPauseIcon } from "lucide-react";
 export function Search(){
    return(
       <>
+      <Link to="/test"><h1>clica aqui</h1></Link>
          <div className="bg-[#181818] w-full p-4">
             <h1 className="font-bold text-white text-4xl pt-6 mb-5">Search</h1>
                <div className="flex w-full bg-white rounded-[9px]">

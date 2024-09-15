@@ -3,6 +3,8 @@ import { GoHomeFill } from "react-icons/go";
 import Library from "../assets/Library.png";
 import { RiSpotifyFill } from "react-icons/ri";
 
+import { Link } from "react-router-dom";
+
 export function Menu() {
   return (
     <div className="fixed bottom-0 left-0 right-0">
@@ -13,14 +15,17 @@ export function Menu() {
               <GoHomeFill className="w-6 h-6 text-[#ffffff]" />
               <span className="text-xs mt-1">Home</span>
             </li>
+            
             <li className="flex flex-col items-center cursor-pointer hover:scale-125 transition-transform">
               <Search className="w-6 h-6 text-[#ffffff]" />
               <span className="text-xs mt-1">Search</span>
             </li>
+            
             <li className="flex flex-col items-center cursor-pointer hover:scale-125 transition-transform">
               <img className="w-10 h-7 " src={Library} alt="Library" />
               <span className="text-xs mt-1">Your Library</span>
             </li>
+
             <li className="flex flex-col items-center cursor-pointer hover:scale-125 transition-transform">
             <RiSpotifyFill className="w-10 h-7 text-[#ffffff]"/>
               <span className="text-xs mt-1">Premium</span>
