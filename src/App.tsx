@@ -1,7 +1,8 @@
 
 import { BrowserRouter, Routes, Route, } from "react-router-dom"; 
 import { Search} from '@/components/Search'
-import {Test} from "@/test";
+import {Music} from '@/components/Playlist'
+
 import Menu from "./components/Menu";
 
 export function App() {
@@ -9,9 +10,9 @@ export function App() {
     <>
     <BrowserRouter>
       <Routes>
-          <Route path="/" element={<Search/>}/> {/* coloque a tela inicial */}
+          <Route path="/" element={<Search/>}/>
           <Route path="/Search" element={<Search/>}/>
-          <Route path="/test" element={<Test/>}/>
+          <Route path="/Playlist" element={<Music/>}/>
           <Route path="/Menu" element={<Menu/>}/>
           <Route path="*" element={<h1>Not found</h1>}/>
       </Routes>  

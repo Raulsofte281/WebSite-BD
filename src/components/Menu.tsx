@@ -22,11 +22,11 @@ export function Menu() {
               <Search className="w-6 h-6 text-[#ffffff]" />
               <span className="text-xs mt-1">Search</span>
             </li>
-            
+            <Link to='/Playlist'>
             <li className="flex flex-col items-center cursor-pointer hover:scale-125 transition-transform">
              <img className="w-10 h-7 " src={Library} alt="Library" />
-             <Link to='/test'> <span className="text-xs mt-1">Your Library</span></Link>
-            </li>
+              <span className="text-xs mt-1">Your Library</span>
+            </li></Link>
 
             <li className="flex flex-col items-center cursor-pointer hover:scale-125 transition-transform">
               <RiSpotifyFill className="w-10 h-7 text-[#ffffff]"/>
