@@ -3,6 +3,11 @@ import Poster from "@/assets/Poster.png";
 import Propertier from "@/assets/Properties.png";
 import Arrow from "@/assets/Arrow.png";
 import Heart from "@/assets/Heart.png";
+import Shuerfley from "@/assets/Shuffle.png";
+import Previous from "@/assets/Previous Play.png";
+import Pause from "@/assets/Pause.png";
+import Next from "@/assets/Next Play.png";
+import Loop from "@/assets/Loop.png";
 
 export function Music() {
   return (
@@ -17,7 +22,7 @@ export function Music() {
         <div className="text-[#ffffff] text-center pt-3 pb-9">
           <h1 className="font-normal text-sm">PLAYING FROM SEARCH</h1>
           <h2 className="font-semibold text-sm">“stay” in Songs</h2>
-          <img className="w-[300px] h-[340px] pl-3 pr-3 pt-5" src={Poster} alt="" />
+          <img className="w-[300px] h-[300px] pl-3 pr-3 pt-5" src={Poster} alt="" />
         </div>
         <div className="flex items-center justify-between w-full px-[50px] pt-3 text-[#ffffff]">
           <div>
@@ -39,6 +44,15 @@ export function Music() {
             <span>3:36</span>
           </div>
         </div>
+      </div>
+      <div className="flex gap-x-8 items-center pl-9">
+        <img src={Shuerfley} alt="Shuffle" className="w-6 h-6" />
+        <img src={Previous} alt="Previous" className="w-8 h-8" />
+        <div className="w-16 h-16 flex items-center justify-center">
+          <img src={Pause} alt="" />
+        </div>
+        <img src={Next} alt="Next" className="w-8 h-8" />
+        <img src={Loop} alt="Repeat" className="w-6 h-6" />
       </div>
       <Menu />
     </div>
