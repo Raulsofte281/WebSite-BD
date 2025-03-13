@@ -31,7 +31,12 @@ export function Menu() {
              <span className="text-xs mt-1">Your Library</span>
             </li>
             </Link>
-            <Link to="/Music">
+            <Link to='/Playlist'>
+            <li className="flex flex-col items-center cursor-pointer hover:scale-125 transition-transform">
+             <img className="w-10 h-7 " src={Library} alt="Library" />
+              <span className="text-xs mt-1">Your Library</span>
+            </li></Link>
+            <Link to="/Teste">
             <li className="flex flex-col items-center cursor-pointer hover:scale-125 transition-transform">
               <RiSpotifyFill className="w-10 h-7 text-[#ffffff]"/>
               <span className="text-xs mt-1">Premium</span>
